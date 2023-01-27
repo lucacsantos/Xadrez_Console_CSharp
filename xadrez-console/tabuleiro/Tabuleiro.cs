@@ -52,7 +52,7 @@
             return aux;
         }
 
-        public bool posicasoValida(Posicao pos)
+        public bool posicaoValida(Posicao pos)
         {
             if (pos.linha < 0 || pos.linha >= linhas || pos.coluna < 0 || pos.coluna >= colunas)
             {
@@ -63,7 +63,7 @@
 
         public void validarPosicao(Posicao pos)
         {
-            if (!posicasoValida(pos)) {
+            if (!posicaoValida(pos)) {
                 throw new TabuleiroException("Posição inválida!");
             }
         }
